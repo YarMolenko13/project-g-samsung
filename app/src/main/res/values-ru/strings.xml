@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">ProjectG</string>
+    <string name="create_account">Создать аккаунт</string>
+    <string name="login">Логин</string>
+    <string name="password">Пароль</string>
+    <string name="repeat_password">Повторите пароль</string>
+    <string name="next">Далее</string>
+    <string name="login_account">Авторизация</string>
+    <string name="email_or_login">E-mail или логин</string>
+    <string name="log_in">Войти</string>
+    <string name="or">Или</string>
+    <string name="to_register">зарегистрируйтесь</string>
+    <string name="forgot_password">Забыли пароль?</string>
+    <string name="recover_password">Восстановление пароля</string>
+    <string name="recover_text">На почту, привязанную к аккаунту будет выслан код для смены пароля</string>
+    <string name="recover_code">Код</string>
+</resources>

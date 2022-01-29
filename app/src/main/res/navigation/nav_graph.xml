@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/nav_graph"
+    app:startDestination="@id/authorizationFragment">
+
+    <fragment
+        android:id="@+id/registrationFragment"
+        android:name="com.techstroy.projectg.ui.registration.RegistrationFragment"
+        android:label="registration_fragment"
+        tools:layout="@layout/registration_fragment" />
+    <fragment
+        android:id="@+id/authorizationFragment"
+        android:name="com.techstroy.projectg.ui.authorization.AuthorizationFragment"
+        android:label="AuthorizationFragment"
+        tools:layout="@layout/authorization_fragment">
+
+        <action
+            android:id="@+id/action_authorizationFragment_to_registrationFragment"
+            app:destination="@id/registrationFragment" />
+        <action
+            android:id="@+id/action_authorizationFragment_to_recoverPasswordFragment"
+            app:destination="@id/recoverPasswordFragment" />
+        <action
+            android:id="@+id/action_authorizationFragment_to_feedFragment"
+            app:destination="@id/feedFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/recoverPasswordFragment"
+        android:name="com.techstroy.projectg.ui.recover.RecoverPasswordFragment"
+        android:label="recover_password_fragment"
+        tools:layout="@layout/recover_password_fragment" />
+    <fragment
+        android:id="@+id/feedFragment"
+        android:name="com.techstroy.projectg.ui.feed.FeedFragment"
+        android:label="feed_fragment"
+        tools:layout="@layout/feed_fragment" />
+</navigation>

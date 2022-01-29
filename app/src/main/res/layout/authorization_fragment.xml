@@ -1,0 +1,142 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <data>
+
+        <variable
+            name="viewModel"
+            type="com.techstroy.projectg.ui.authorization.AuthorizationViewModel" />
+    </data>
+
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <ImageView
+                android:rotation="52"
+                android:translationY="-280dp"
+                android:translationX="50dp"
+                android:layout_alignParentRight="true"
+                android:layout_width="300dp"
+                android:layout_height="400dp"
+                android:src="@drawable/green_rect"/>
+
+            <ImageView
+                android:rotation="49"
+                android:translationY="160dp"
+                android:translationX="0dp"
+                android:layout_alignParentBottom="true"
+                android:layout_width="230dp"
+                android:layout_height="300dp"
+                android:src="@drawable/green_rect"/>
+
+        </RelativeLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            style="@style/Theme.Auth.Container">
+
+            <TextView
+                android:id="@+id/heading"
+                style="@style/Theme.Heading1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:paddingBottom="@dimen/auth_heading_bottom"
+                android:text="@string/login_account" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:paddingBottom="@dimen/auth_edittexts_bottom">
+
+                <com.google.android.material.textfield.TextInputLayout
+                    style="@style/Theme.EditTextLayout"
+                    android:layout_width="match_parent"
+                    android:hint="@string/email_or_login">
+
+                    <com.google.android.material.textfield.TextInputEditText
+                        android:id="@+id/enter_email"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent" />
+                </com.google.android.material.textfield.TextInputLayout>
+
+                <com.google.android.material.textfield.TextInputLayout
+                    style="@style/Theme.EditTextLayout"
+                    android:layout_width="match_parent"
+                    android:hint="@string/password">
+
+                    <com.google.android.material.textfield.TextInputEditText
+                        android:id="@+id/enter_login"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent" />
+
+                </com.google.android.material.textfield.TextInputLayout>
+
+                <com.google.android.flexbox.FlexboxLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="-12dp"
+                    app:justifyContent="space_between">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal"
+                        app:layout_flexBasisPercent="50%">
+
+                        <TextView
+                            style="@style/Theme.Auth.Support"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:paddingRight="5dp"
+                            android:text="@string/or" />
+
+                        <TextView
+                            android:id="@+id/to_registration"
+                            style="@style/Theme.Auth.Support.Navigate"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:clickable="true"
+                            android:focusable="true"
+                            android:text="@string/to_register" />
+                    </LinearLayout>
+
+                    <!--TODO: Navigation to forgot pass.-->
+                    <TextView
+                        android:id="@+id/to_forgot_password"
+                        style="@style/Theme.Auth.Support.Navigate"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:focusable="true"
+                        android:maxLines="1"
+                        android:text="@string/forgot_password" />
+
+                </com.google.android.flexbox.FlexboxLayout>
+
+            </LinearLayout>
+
+            <Button
+                android:id="@+id/log_in"
+                style="@style/Theme.Auth.Button"
+                android:layout_width="wrap_content"
+                android:layout_height="@dimen/edit_text_layout_height"
+                android:layout_gravity="center"
+
+                android:text="@string/log_in" />
+
+        </LinearLayout>
+
+    </FrameLayout>
+
+</layout>

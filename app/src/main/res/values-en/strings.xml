@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">ProjectG</string>
+    <string name="create_account">Create account</string>
+    <string name="login">Login</string>
+    <string name="password">Password</string>
+    <string name="repeat_password">Repeat password</string>
+    <string name="next">Next</string>
+    <string name="login_account">Authorize</string>
+    <string name="email_or_login">E-mail or login</string>
+    <string name="log_in">Log in</string>
+    <string name="or">Or</string>
+    <string name="to_register">sign up</string>
+    <string name="forgot_password">Forgot password?</string>
+    <string name="recover_password">Recover password</string>
+    <string name="recover_text">A code to change your password will be sent to the email address linked to your account</string>
+    <string name="recover_code">Code</string>
+</resources>

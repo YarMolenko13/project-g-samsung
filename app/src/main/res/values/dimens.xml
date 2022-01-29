@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="rounded">4dp</dimen>
+
+    <dimen name="auth_top">89dp</dimen>
+    <dimen name="auth_horizontal">27dp</dimen>
+    <dimen name="auth_heading_bottom">70dp</dimen>
+    <dimen name="auth_edittexts_bottom">28dp</dimen>
+
+    <dimen name="edit_text_bottom">18dp</dimen>
+    <dimen name="edit_text_layout_height">58dp</dimen>
+
+    <dimen name="bottom_navigation_view_height">56dp</dimen>
+</resources>
