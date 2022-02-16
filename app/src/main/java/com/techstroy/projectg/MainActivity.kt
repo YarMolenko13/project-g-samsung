@@ -2,6 +2,7 @@ package com.techstroy.projectg
 
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
+import android.util.Log
 import android.view.View
 import android.widget.Toast
 import androidx.navigation.findNavController
@@ -12,6 +13,8 @@ class MainActivity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main)
+
+        applicationContext
 
         val navigation = findViewById<BottomNavigationView>(R.id.bottom_navigation)
         val navController = this.findNavController(R.id.nav_host_fragment)

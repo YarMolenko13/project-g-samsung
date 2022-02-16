@@ -1,6 +1,11 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
+    <dimen name="app_bar_layout_height">170dp</dimen>
+
+    <dimen name="feed_body_elevation">4dp</dimen>
+
     <dimen name="rounded">4dp</dimen>
+    <dimen name="feed_body_rounded">22dp</dimen>
 
     <dimen name="auth_top">89dp</dimen>
     <dimen name="auth_horizontal">27dp</dimen>

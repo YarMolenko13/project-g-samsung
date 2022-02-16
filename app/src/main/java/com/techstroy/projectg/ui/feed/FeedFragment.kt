@@ -1,17 +1,52 @@
 package com.techstroy.projectg.ui.feed
 
-import androidx.lifecycle.ViewModelProvider
+import android.graphics.Color
 import android.os.Bundle
-import androidx.fragment.app.Fragment
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
+import androidx.fragment.app.Fragment
+import androidx.lifecycle.ViewModelProvider
+import com.google.android.material.appbar.AppBarLayout
+import com.google.android.material.appbar.AppBarLayout.OnOffsetChangedListener
 import com.techstroy.projectg.R
+import com.techstroy.projectg.databinding.FeedFragmentBinding
+
 
 class FeedFragment : Fragment() {
 
+    private lateinit var binding: FeedFragmentBinding
+
     companion object {
         fun newInstance() = FeedFragment()
+    }
+
+    abstract class AppBarStateChangeListener : OnOffsetChangedListener {
+        enum class State {
+            EXPANDED, COLLAPSED, IDLE
+        }
+
+        private var mCurrentState = State.IDLE
+        override fun onOffsetChanged(appBarLayout: AppBarLayout, i: Int) {
+            mCurrentState = if (i == 0) {
+                if (mCurrentState != State.EXPANDED) {
+                    onStateChanged(appBarLayout, State.EXPANDED)
+                }
+                State.EXPANDED
+            } else if (Math.abs(i) >= appBarLayout.totalScrollRange) {
+                if (mCurrentState != State.COLLAPSED) {
+                    onStateChanged(appBarLayout, State.COLLAPSED)
+                }
+                State.COLLAPSED
+            } else {
+                if (mCurrentState != State.IDLE) {
+                    onStateChanged(appBarLayout, State.IDLE)
+                }
+                State.IDLE
+            }
+        }
+
+        abstract fun onStateChanged(appBarLayout: AppBarLayout?, state: State?)
     }
 
     private lateinit var viewModel: FeedViewModel
@@ -20,7 +55,22 @@ class FeedFragment : Fragment() {
         inflater: LayoutInflater, container: ViewGroup?,
         savedInstanceState: Bundle?
     ): View? {
-        return inflater.inflate(R.layout.feed_fragment, container, false)
+        binding = FeedFragmentBinding.inflate(inflater)
+
+        binding.appBarLayout.addOnOffsetChangedListener(object: AppBarStateChangeListener() {
+            override fun onStateChanged(appBarLayout: AppBarLayout?, state: State?) {
+                state?.let {
+                    if (it.name == "COLLAPSED") {
+                        binding.scrollBody.background = resources.getDrawable(R.color.white, null)
+                    } else {
+                        binding.scrollBody.background = resources.getDrawable(R.drawable.feed_body_bg, null)
+                    }
+                }
+            }
+        })
+
+
+        return binding.root
     }
 
     override fun onActivityCreated(savedInstanceState: Bundle?) {
