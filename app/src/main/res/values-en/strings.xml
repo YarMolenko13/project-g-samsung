@@ -15,4 +15,8 @@
     <string name="recover_password">Recover password</string>
     <string name="recover_text">A code to change your password will be sent to the email address linked to your account</string>
     <string name="recover_code">Code</string>
+    <string name="tile_grenades">Grenades</string>
+    <string name="tile_tactics">Tactics</string>
+    <string name="tile_commands">Commands</string>
+    <string name="tile_trainings">Trainings</string>
 </resources>

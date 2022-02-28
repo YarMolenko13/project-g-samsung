@@ -57,6 +57,17 @@ class FeedFragment : Fragment() {
     ): View? {
         binding = FeedFragmentBinding.inflate(inflater)
 
+        val adapter = MatchChipsAdapter()
+
+        val match1 = MatchChipData(id=1, date="12:42")
+        val match2 = MatchChipData(id=2, date="15:22")
+        val match3 = MatchChipData(id=3, date="17:51")
+        val matches = listOf(match1, match2, match3, MatchChipData(id=4, date="21:10"))
+
+        binding.matchChips.adapter = adapter
+
+        adapter.submitList(matches)
+
         binding.appBarLayout.addOnOffsetChangedListener(object: AppBarStateChangeListener() {
             override fun onStateChanged(appBarLayout: AppBarLayout?, state: State?) {
                 state?.let {

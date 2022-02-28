@@ -15,4 +15,8 @@
     <string name="recover_password">Восстановление пароля</string>
     <string name="recover_text">На почту, привязанную к аккаунту будет выслан код для смены пароля</string>
     <string name="recover_code">Код</string>
+    <string name="tile_grenades">Раскидки</string>
+    <string name="tile_tactics">Тактики</string>
+    <string name="tile_commands">Команды</string>
+    <string name="tile_trainings">Тренировки</string>
 </resources>

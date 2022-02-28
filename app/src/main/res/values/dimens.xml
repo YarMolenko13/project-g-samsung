@@ -1,19 +1,35 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-    <dimen name="app_bar_layout_height">170dp</dimen>
-
-    <dimen name="feed_body_elevation">4dp</dimen>
-
-    <dimen name="rounded">4dp</dimen>
-    <dimen name="feed_body_rounded">22dp</dimen>
+    <!--отступы-->
+    <dimen name="main_horizontal_indent">18dp</dimen>
+    <dimen name="collapsing_tollbar_horizontal_indent">22dp</dimen>
+    <dimen name="edit_text_bottom">18dp</dimen>
 
     <dimen name="auth_top">89dp</dimen>
     <dimen name="auth_horizontal">27dp</dimen>
     <dimen name="auth_heading_bottom">70dp</dimen>
     <dimen name="auth_edittexts_bottom">28dp</dimen>
 
-    <dimen name="edit_text_bottom">18dp</dimen>
+    <dimen name="feed_chip_indent">12dp</dimen>
+    <dimen name="feed_chip_vertical_indent">18dp</dimen>
+
+    <!--размеры-->
+    <dimen name="app_bar_layout_height">170dp</dimen>
+    <dimen name="bottom_navigation_view_height">56dp</dimen>
     <dimen name="edit_text_layout_height">58dp</dimen>
 
-    <dimen name="bottom_navigation_view_height">56dp</dimen>
+    <dimen name="chip_min_width">140dp</dimen>
+
+    <!--шрифт-->
+    <dimen name="text_size_h2">22sp</dimen>
+    <dimen name="text_size_small">14sp</dimen>
+    <dimen name="text_size_smallest">12sp</dimen>
+
+    <!--z-->
+    <dimen name="feed_body_elevation">4dp</dimen>
+
+    <!--скругления-->
+    <dimen name="rounded">4dp</dimen>
+    <dimen name="feed_body_rounded">22dp</dimen>
+    <dimen name="feed_chip_rounded">14dp</dimen>
 </resources>

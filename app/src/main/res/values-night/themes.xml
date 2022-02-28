@@ -19,8 +19,26 @@
 
         <!-- Global -->
         <item name="fontFamily">@font/font</item>
-
+        <item name="android:textColor">@color/dark</item>
     </style>
+
+    <!-- Elements -->
+    <style name="Theme.Tile" parent="Widget.MaterialComponents.CardView">
+        <item name="android:clickable">true</item>
+        <item name="android:padding">0dp</item>
+        <item name="layout_flexBasisPercent">47%</item>
+
+        <item name="android:layout_marginBottom">@dimen/main_horizontal_indent</item>
+    </style>
+
+    <!--TODO: change font??-->
+    <style name="Theme.Tile.Heading" parent="">
+        <item name="android:layout_gravity">center</item>
+        <item name="android:textColor">@color/white</item>
+        <item name="android:textSize">@dimen/text_size_h2</item>
+        <item name="fontFamily">@font/font_medium</item>
+    </style>
+    <!-- Elements -->
 
     <!-- Auth -->
     <style name="Theme.Auth.Button" parent="">
@@ -59,6 +77,19 @@
     </style>
     <!-- /Auth -->
 
+    <!-- Feed -->
+    <style name="Theme.Feed.Chip.Text" parent="">
+        <item name="fontFamily">@font/font_medium</item>
+        <item name="fontWeight">700</item>
+    </style>
+    <!-- /Feed -->
+
+    <!-- Bottom navigation view -->
+    <style name="Theme.BottomNavigationView" parent="Widget.MaterialComponents.BottomNavigationView">
+        <item name="android:layout_height">@dimen/bottom_navigation_view_height</item>
+        <item name="elevation">4dp</item>
+    </style>
+
     <style name="Theme.Heading1" parent="Theme.ProjectG">
         <item name="android:textSize">34sp</item>
         <item name="color">@color/dark</item>
@@ -78,4 +109,5 @@
         <item name="android:padding">20dp</item>
         <item name="colorControlActivated">@color/dark</item>
     </style>
+    <!-- /Bottom navigation view -->
 </resources>

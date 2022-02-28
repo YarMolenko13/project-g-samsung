@@ -20,4 +20,8 @@
     <string name="recover_code">Код</string>
 
     <string name="lorem" translatable="false">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Architecto assumenda cumque doloremque doloribus, illum molestias quidem. Architecto aspernatur consectetur culpa delectus, molestias nesciunt quibusdam quo quod repellendus similique, temporibus vel. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Amet aspernatur assumenda corporis culpa deleniti, distinctio eveniet illum minus modi molestiae non perspiciatis quibusdam sint temporibus ullam! Alias consequuntur deleniti dolores esse et illum labore, mollitia natus nemo placeat vitae voluptatum. Ad architecto assumenda atque blanditiis consequatur corporis debitis deleniti dolor earum error est, eveniet fugiat nam natus, necessitatibus nesciunt nihil nostrum numquam quaerat quisquam quod reiciendis repudiandae sed, similique tempora tempore veritatis voluptatum. Accusantium aliquid amet at consectetur dolore dolorem ea eos, esse incidunt laudantium minus nisi non nostrum odio quae quaerat quo, recusandae, sed sint tempore vel vero voluptatem! Lorem ipsum dolor sit amet, consectetur adipisicing elit. A, atque soluta. Cupiditate dolorum exercitationem fuga illo praesentium repudiandae sapiente similique?</string>
+    <string name="tile_grenades">Раскидки</string>
+    <string name="tile_tactics">Тактики</string>
+    <string name="tile_commands">Команды</string>
+    <string name="tile_trainings">Тренировки</string>
 </resources>
